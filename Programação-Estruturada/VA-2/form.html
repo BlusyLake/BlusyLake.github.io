@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montagem de PCs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Monte seu PC Gamer</h1>
+        <form id="pc-form">
+            <div class="form-group">
+                <label for="pc-name">Nome do PC:</label>
+                <input type="text" id="pc-name" placeholder="Exemplo: PC Supremo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cabinet">Gabinete:</label>
+                <select id="cabinet" required>
+                    <option value="" disabled selected>Escolha o gabinete</option>
+                    <option value="Gabinete Gamer RGB" data-price="350">Gabinete Gamer RGB - R$350</option>
+                    <option value="Gabinete Básico" data-price="200">Gabinete Básico - R$200</option>
+                    <option value="Gabinete Premium" data-price="500">Gabinete Premium - R$500</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="processor">Processador:</label>
+                <select id="processor" required>
+                    <option value="" disabled selected>Escolha o processador</option>
+                    <option value="Intel Core i5-13600K" data-price="1500">Intel Core i5-13600K - R$1500</option>
+                    <option value="AMD Ryzen 5 7600X" data-price="1300">AMD Ryzen 5 7600X - R$1300</option>
+                    <option value="Intel Core i7-13700K" data-price="2500">Intel Core i7-13700K - R$2500</option>
+                    <option value="AMD Ryzen 7 7800X" data-price="2200">AMD Ryzen 7 7800X - R$2200</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="gpu">Placa de Vídeo (GPU):</label>
+                <select id="gpu" required>
+                    <option value="" disabled selected>Escolha a GPU</option>
+                    <option value="NVIDIA RTX 3060" data-price="2000">NVIDIA RTX 3060 - R$2000</option>
+                    <option value="AMD RX 6700 XT" data-price="1900">AMD RX 6700 XT - R$1900</option>
+                    <option value="NVIDIA RTX 4070" data-price="4000">NVIDIA RTX 4070 - R$4000</option>
+                    <option value="AMD RX 7900 XT" data-price="3800">AMD RX 7900 XT - R$3800</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="ram">Memória RAM:</label>
+                <select id="ram" required>
+                    <option value="" disabled selected>Escolha a RAM</option>
+                    <option value="16GB DDR5 5200MHz" data-price="500">16GB DDR5 5200MHz - R$500</option>
+                    <option value="32GB DDR5 6000MHz" data-price="1000">32GB DDR5 6000MHz - R$1000</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="storage">Armazenamento:</label>
+                <select id="storage" required>
+                    <option value="" disabled selected>Escolha o armazenamento</option>
+                    <option value="SSD 1TB NVMe" data-price="600">SSD 1TB NVMe - R$600</option>
+                    <option value="SSD 2TB NVMe" data-price="1200">SSD 2TB NVMe - R$1200</option>
+                    <option value="HDD 2TB" data-price="400">HDD 2TB - R$400</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="psu">Fonte de Alimentação:</label>
+                <select id="psu" required>
+                    <option value="" disabled selected>Escolha a fonte</option>
+                    <option value="Fonte 650W 80+ Bronze" data-price="350">Fonte 650W 80+ Bronze - R$350</option>
+                    <option value="Fonte 750W 80+ Gold" data-price="600">Fonte 750W 80+ Gold - R$600</option>
+                </select>
+            </div>
+
+            <button type="submit">Salvar Configuração</button>
+        </form>
+        <a href="tabela.html" class="link">Ver Configurações Salvas</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
