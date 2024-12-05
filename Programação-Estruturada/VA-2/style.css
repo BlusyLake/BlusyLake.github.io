@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #6a1b9a, #8e24aa); /* Tons de roxo */
+  color: white;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 30px;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #e1bee7; /* Tom suave de roxo */
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ce93d8; /* Cor roxa suave */
+  font-size: 1rem;
+  background-color: #d1c4e9; /* Cor de fundo suave */
+  color: #4a148c; /* Cor escura para texto */
+}
+
+input:focus, select:focus {
+  outline: none;
+  border: 2px solid #8e24aa; /* Destaque quando o campo é focado */
+  background-color: #f3e5f5; /* Cor mais clara ao focar */
+}
+
+button {
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: #ab47bc; /* Roxo mais forte */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #9c27b0; /* Cor mais escura ao passar o mouse */
+}
+
+#resultsSection {
+  margin-top: 30px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #e1bee7; /* Cor suave para bordas */
+  text-align: center;
+}
+
+th {
+  background-color: #8e24aa; /* Cor de fundo para cabeçalho */
+  color: white;
+}
+
+td {
+  background-color: #f3e5f5; /* Cor de fundo suave para as células */
+  color: #4a148c; /* Cor escura para o texto */
+}
+
+a.link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #bb86fc; /* Cor roxa suave para o link */
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+a.link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 20px;
+  }
+
+  header h1 {
+      font-size: 2rem;
+  }
+
+  button {
+      font-size: 1rem;
+      padding: 10px;
+  }
+
+  h2 {
+      font-size: 1.8rem;
+  }
+}
